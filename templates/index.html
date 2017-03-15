@@ -1,0 +1,61 @@
+<html>
+  <style>
+    body{ 
+      font-size: 15pt;
+      font-family: arial;
+    }
+  </style>
+
+
+<body>
+  <h1>project1-part3: Rating of Critics Ratings!</h1>
+
+<p><a href="another">Go to the other page for User likes</a></p>
+
+
+<h2>Each form below will show the full table if any fields are left blank!</h2>
+<p>View average critic ratings:</p>
+<form method="GET" action="/company">
+<p>Critic Name: <input type="text" name="company"> <input type="submit" value="Search"></p>
+</form>
+
+<p><br></p>
+
+<p>View average developer ratings:</p>
+<form method="GET" action="/dev_avg">
+<p>Developer Name: <input type="text" name="developer"> <input type="submit" value="Search"></p>
+</form>
+
+<p><br></p>
+
+<p>View average distributor prices:</p>
+<form method="GET" action="/dist_avg">
+<p>Distributor Name: <input type="text" name="distributor"> <input type="submit" value="Search"></p>
+</form>
+
+<p><br></p>
+
+<p>Filter companies by type - Distributor, Developer, or Critic:</p>
+<form method="GET" action="/companytype">
+<p>Company Type: <input type="text" name="companytype"> <input type="submit" value="Search"></p>
+</form>
+
+<p><br></p>
+
+<p>View games with specific genre and/or minimum rating:</p>
+<form method="GET" action="/gamegenre">
+<p>Genre: <input type="text" name="genre"></p>
+<p>Minimum rating (0-100): <input type="text" name="rating"> 
+<input type="submit" value="Search"></p>
+</form>
+
+<p><br></p>
+
+<p>View articles with specific author and/or game:</p>
+<form method="GET" action="/articles">
+<p>Author: <input type="text" name="author"></p>
+<p>Game: <input type="text" name="game_article"> <input type="submit" value="Search"></p>
+</form>
+
+</body>
+</html>

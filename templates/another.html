@@ -1,0 +1,60 @@
+
+<html>
+  <style>
+    body{ 
+      font-size: 15pt;
+      font-family: arial;
+    }
+  </style>
+  
+
+<body>
+  <p><a href="/">Back to index</a></p>
+
+<form method="POST" action="/like_company">
+<p>User: <input type="text" name="user_like_company"> </p>
+<p>Add company to likes: <input type="text" name="like_company"> <input type="submit" value="Add"></p>
+</form>
+
+<form method="GET" action="/see_like_company">
+<p>User: <input type="text" name="see_user_like_company"> </p>
+<p>View company likes: <input type="text" name="see_like_company"> <input type="submit" value="Search"></p>
+</form>
+
+<form method="POST" action="/like_game">
+<p>User: <input type="text" name="user_like_game"> </p>
+<p>Add game to likes: <input type="text" name="like_game"> <input type="submit" value="Add"></p>
+</form>
+
+<form method="GET" action="/see_like_game">
+<p>User: <input type="text" name="see_user_like_game"> </p>
+<p> View game likes: <input type="text" name="see_like_game"> <input type="submit" value="Search"></p>
+</form>
+
+<form method="POST" action="/like_author">
+<p>User: <input type="text" name="user_like_author"> </p>
+<p>Add author to likes: <input type="text" name="like_author"> <input type="submit" value="Add"></p>
+</form>
+
+<form method="GET" action="/see_like_author">
+<p>User: <input type="text" name="see_user_like_author"> </p>
+<p>View author likes: <input type="text" name="see_like_author"> <input type="submit" value="Search"></p>
+</form>
+
+
+
+<div>{{data}}</div>
+
+  <div>
+    {% for n in data %}
+    <div>{{n}}</div>
+    {% endfor %}
+  </div>
+
+
+
+
+
+</body>
+
+</html>
